@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <!--1.設定背景顏色和邊框距離大小 2.設定高度寬度和在版面中的排版-->
+        <!--1.設定StackPanel背景顏色和邊框距離大小 2.設定高度寬度和在版面中的排版-->
         <StackPanel x:Name="stackpanel_DrinkMenu" Margin="20,65,0,0" Background="#FFF9EEEE" 
-                    Height="200"  Width="455"  VerticalAlignment="Top" HorizontalAlignment="Left"/> 
+                    Height="200"  Width="455"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <!--1.設定Button的名稱和呈現文字和邊框距離大小 2.設定高度寬度和在版面中的排版 3.字體設置 4.設定當按下時的事件-->
         <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" 
-                VerticalAlignment="Top" HorizontalAlignment="Right" 
-                Height="60" Width="100" 
-                FontSize="18" FontWeight="Bold" Click="OrderButton_Click"/>
+                VerticalAlignment="Top" HorizontalAlignment="Right" Height="60" Width="100" 
+                FontSize="18" FontWeight="Bold" 
+                Click="OrderButton_Click"/>
         <!--1.設定textblock的名字和背景顏色和邊框距離大小 2.設定高度寬度和在版面中的排版 3.設定字體的大小以及呈現方式-->
         <TextBlock x:Name="ResultTextBlock" Margin="20,0,30,20" Padding="5,5,5,5" Background="#FFF7F3D4"
                    VerticalAlignment="Bottom" Height="220"
