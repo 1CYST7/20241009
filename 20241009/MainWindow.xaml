@@ -13,8 +13,7 @@
         <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" 
                 VerticalAlignment="Top" HorizontalAlignment="Right" 
                 Height="60" Width="100" 
-                FontSize="18" FontWeight="Bold"   
-                Click="OrderButton_Click"/>
+                FontSize="18" FontWeight="Bold" Click="OrderButton_Click"/>
         <!--1.設定textblock的名字和背景顏色和邊框距離大小 2.設定高度寬度和在版面中的排版 3.設定字體的大小以及呈現方式-->
         <TextBlock x:Name="ResultTextBlock" Margin="20,0,30,20" Padding="5,5,5,5" Background="#FFF7F3D4"
                    VerticalAlignment="Bottom" Height="220"
