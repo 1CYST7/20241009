@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <StackPanel x:Name="stackpanel_DrinkMenu" Margin="20,65,0,0" Background="#FFF9EEEE" 
+                    Height="200"  Width="455"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" 
+                VerticalAlignment="Top" HorizontalAlignment="Right" 
+                Height="60" Width="100" 
+                FontSize="18" FontWeight="Bold"   
+                Click="OrderButton_Click"/>
+        <TextBlock x:Name="ResultTextBlock" Margin="20,0,30,20" Padding="5,5,5,5" Background="#FFF7F3D4"
+                   VerticalAlignment="Bottom" Height="220"
+                   TextWrapping="Wrap" FontSize="16"/>
+        <GroupBox Header="內用/外帶" Margin="20,0,0,0" Background="#FFB4F4F3" 
+                  VerticalAlignment="Top" HorizontalAlignment="Left" Height="52" Width="455">
+            <StackPanel Orientation="Horizontal" Height="30">
+                <RadioButton Content="內用" Margin="10,0,0,0"
+                             VerticalAlignment="Center" Height="25" Width="80"
+                             VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold"  
+                             Checked="RadioButton_Checked"/>
+                <RadioButton Content="外帶" Margin="10,0,0,0"
+                             VerticalAlignment="Center" Height="25" Width="80"
+                             VerticalContentAlignment="Center" FontSize="16" FontWeight="Bold"     
+                             Checked="RadioButton_Checked"/>
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
