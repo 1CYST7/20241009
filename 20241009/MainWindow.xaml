@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!--1.設定stackpanel邊距和背景顏色 2.設定高度寬度和排版方式-->
         <StackPanel Margin="20,25,0,0" Background="#FFF9EEEE" 
                     VerticalAlignment="Top" HorizontalAlignment="Left" Height="240"  Width="455">
-            
+            <!--1.設定stackpanel邊距 2.設定高度和底下label的方向性-->
+                <!--兩個label都是1.設定顯示內容和邊距 2.設定垂直排版方式和字體大小、粗細、顏色-->
+                <!--1.設定slider名稱 2.設定高度寬度並將value(下一行label數值)=0 3.設定IsSnapToTickEnabled來判斷滑桿滑到最接近的刻度值和ValueChanged該做的動作-->
+                <!--1.設定label顯示滑桿讀取到的數值和設定邊距 2.設定垂直排版方式和字體大小、粗細-->
             <StackPanel  Margin="5,0,5,0" 
                           Orientation="Horizontal" Height="40">
                 <Label Content="紅茶大杯" Margin="20, 0, 50, 0" 
@@ -83,9 +87,11 @@
                        FontSize="14" FontWeight="Bold" VerticalContentAlignment="Center" />
             </StackPanel>
         </StackPanel>
+        <!--1.設定button名稱和顯示內容和邊距 2.設定高度寬度和排版方式 3.設定字體大小、粗細-->
         <Button x:Name="OrderButton" Content="確定訂購" Margin="0,25,30,0" 
                 VerticalAlignment="Top" HorizontalAlignment="Right" Height="60" Width="100"
                 FontSize="18" FontWeight="Bold"  />
+        <!--1.設定textblock名稱和邊距和背景顏色 2.設定文字的呈現方式-->
         <TextBlock x:Name="ResultTextBlock" Margin="20,285,30,35" Background="#FFF7F3D4"
                    TextWrapping="Wrap" />
     </Grid>          
