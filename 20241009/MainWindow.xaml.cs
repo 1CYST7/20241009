@@ -35,11 +35,13 @@ namespace _20241009
         }
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            var targetSlider = sender as Slider;
-            int amount = (int)targetSlider.Value;
-            var targetStackPanel = targetSlider.Parent as StackPanel;
-            var targetLabel = targetStackPanel.Children[0] as Label;
-            var drinkName = targetLabel.Content.ToString();
+            var targetSlider = sender as Slider; // 取得觸發事件的滑桿
+            int amount = (int)targetSlider.Value; // 取得滑桿的值並轉為整數，表示選擇的數量
+            var targetStackPanel = targetSlider.Parent as StackPanel; // 取得滑桿的父容器 StackPanel
+            var targetLabel = targetStackPanel.Children[0] as Label; // 第一個子元素是 Label，取出並作為飲料名稱的標籤
+            var drinkName = targetLabel.Content.ToString(); // 取得標籤的內容，為飲料名稱
+
+            // 顯示訊息框，內容包括飲料名稱、數量和總價
             MessageBox.Show(drinkName + " " + amount + "杯，共" + drinks[drinkName] * amount + "元");
         }
 
